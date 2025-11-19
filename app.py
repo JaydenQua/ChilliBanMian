@@ -8,7 +8,7 @@ from tensorflow.keras.layers import LSTM, Dense, Dropout
 from sklearn.metrics import mean_squared_error
 import math
 import tensorflow as tf
-import load_model
+
 
 # Choose the stock
 ticker = 'MSFT'
@@ -116,8 +116,9 @@ from tensorflow.keras.models import save_model  #slight issue but shouldnt affec
 
 # file
 MODEL_PATH = 'lstm_stock_model.keras' 
-model = load_model(MODEL_PATH)
+model = save_model(MODEL_PATH)
 
 
 
 print("Model saved successfully as lstm_stock_model.h5,eta to print graph (5mins?)")
+
