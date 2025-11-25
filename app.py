@@ -116,9 +116,10 @@ from tensorflow.keras.models import save_model  #slight issue but shouldnt affec
 
 # file
 MODEL_PATH = 'lstm_stock_model.keras' 
-model = save_model(MODEL_PATH)
+model.save(MODEL_PATH)
 
 
 
 print("Model saved successfully as lstm_stock_model.h5,eta to print graph (5mins?)")
+
 
