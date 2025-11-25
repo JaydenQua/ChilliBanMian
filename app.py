@@ -120,6 +120,7 @@ model.save(MODEL_PATH)
 
 
 
-print("Model saved successfully as lstm_stock_model.h5,eta to print graph (5mins?)")
+print("Model saved successfully as {MODEL_PATH} ,eta to print graph (5mins?)")
+
 
 
