@@ -88,7 +88,7 @@ def train_and_save_model(X_train, y_train, X_test, model_path, epochs=10):
     
     # Use st.spinner to show progress during the slow training
     with st.spinner("Training in progress..."):
-        # We use a lower epoch count here for web app context
+
         model.fit(
             X_train,
             y_train,
@@ -145,7 +145,7 @@ def main():
     # Visualization
     st.subheader("4. Price Forecast Visualization")
     
-    # This line clears any residual plot state, which sometimes prevents proper rendering in Streamlit's environment.
+    
     plt.close('all') 
     fig, ax = plt.subplots(figsize=(16, 6))
     ax.plot(test_dates, actual_prices, color='red', linewidth=2, label='Actual Price')
@@ -162,4 +162,5 @@ def main():
 
 
 if __name__ == '__main__':
+
     main()
